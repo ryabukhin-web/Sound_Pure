@@ -1,0 +1,299 @@
+html,
+body
+    padding: 0
+    margin: 0 auto
+    width: 100%
+    height: 100%
+    position: relative
+    min-width: 380px
+
+body
+    font-size: 16px
+    line-height: 1.2
+    color: #333333
+    background: #FFFFFF
+    min-height: 100%
+    display: flex
+    flex-flow: column
+    font-family: Roboto
+
+a
+    color: #2755A2
+    transition: all .3s
+
+    &:hover
+        color: #022157
+
+.wrapper
+    margin: 0 auto
+    flex-grow: 1
+    display: flex
+    flex-flow: column
+
+.main
+    max-width: 1128px
+    width: calc(100% - 90px)
+    margin: 130px auto 0 auto
+    border-radius: 20px 20px 0 0
+    background: rgba(255, 255, 255, 0.99)
+    flex-grow: 1
+
+    @media screen and ( max-width: 1000px )
+        margin-left: 0
+        margin-right: 0
+        width: 100%
+
+    &__wrapper
+        padding: 60px 70px
+
+        @media screen and ( max-width: 1400px )
+            padding: 60px 30px
+
+        @media screen and ( max-width: 1000px )
+            padding: 60px 20px
+
+    &_cabinet
+        margin-left: 60px
+
+        @media screen and ( max-width: 1000px )
+            margin-left: 0
+
+*:active,
+*:hover,
+*:focus
+    outline: 0
+    outline-offset: 0
+
+a:active,
+a:focus
+    outline: none
+
+input, textarea
+    outline:none
+
+input:active, textarea:active
+    outline:none
+
+*:focus 
+    outline:none
+
+textarea
+    resize:none
+    resize:vertical
+    resize:horizontal
+
+button:active, button:focus 
+  outline: none
+
+button::-moz-focus-inner 
+  border: 0
+
+.main-title
+    font-family: 'Apex Mk3', sans-serif
+    color: #2755A2
+    font-size: 33px
+    font-weight: 200
+    position: relative
+    line-height: 1.1
+    padding-bottom: 15px
+    margin: 20px 0
+    display: flex
+    justify-content: flex-start
+
+    &::after
+        content: ''
+        width: 93px
+        height: 4px
+        position: absolute
+        bottom: 0
+        background: #2755A2
+
+    &_center
+        justify-content: center
+
+.logo
+    width: 100%
+    display: block
+
+    &__image
+        max-width: 100%
+
+    &_center
+        text-align: center
+
+.back
+    position: fixed
+    top: 0
+    right: 0
+    z-index: -1
+    width: 50%
+    height: 100%
+    background-image: url(images/back.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 0 45%
+
+    &__login
+        right: -6%
+        width: 75%
+
+.year-panel
+    position: absolute
+    top: 130px
+    right: 50px
+    padding: 25px 35px 20px 45px
+    background: rgba(255, 255, 255, 0.91)
+
+    &__text
+        font-size: 68px
+        position: relative
+        line-height: 1
+        padding-bottom: 10px
+        font-stretch: condensed
+
+        &::after
+            content: ''
+            width: 93px
+            height: 4px
+            position: absolute
+            bottom: 0
+            right: 0
+            background: #333
+
+    @media screen and ( max-width: 800px )
+        top: 10px
+        right: 30px
+        padding-top: 0
+        padding-bottom: 10px
+        border-radius: 20px
+
+        &__text
+            font-size: 45px
+
+            &::after
+                width: 70px
+
+@media screen and ( max-width: 1850px )
+    .cabinet .year-panel
+        top: 10px
+        right: 30px
+        padding-top: 0
+        padding-bottom: 10px
+        border-radius: 20px
+
+        &__text
+            font-size: 45px
+
+            &::after
+                width: 70px
+
+.form
+    font-family: 'Apex Mk3', sans-serif
+    font-size: 18px
+    line-height: 1
+    display: flex
+    flex-flow: column
+    align-items: center
+
+    &__lable
+        display: block
+        width: 373px
+        max-width: 100%
+
+    &__text
+        display: block
+        margin-bottom: 10px
+
+    &__input
+        margin-bottom: 30px
+        border-radius: 7px
+        border: 1px solid #C5C5C5
+        padding: 12px
+        width: calc(100% - 24px)
+        max-width: 373px
+        display: block
+        font-family: Roboto
+        font-size: 18px
+        transition: all .3s
+
+        &:hover
+            background: #fdfdfd
+            
+        &:focus
+            background: #fdfdfd
+            border-color: #717171
+
+    &__button
+        margin-top: 10px
+
+.button
+    background: rgb(39,85,162)
+    background: linear-gradient(90deg, rgba(39,85,162,1) 0%, rgba(41,121,187,1) 100%)
+    width: 100%
+    max-width: 373px
+    padding: 14px
+    border: none
+    border-radius: 7px
+    color: #fff
+    text-align: center
+    cursor: pointer
+    font-family: 'Apex Mk3', sans-serif
+    font-size: 18px
+    position: relative
+    overflow: hidden
+
+    span
+        position: relative
+
+    &:hover::before
+        opacity: 1
+
+    &::before
+        transition: opacity .3s linear
+        opacity: 0
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 0
+        width: 100%
+        height: 100%
+        background: rgb(41,121,187)
+        background: linear-gradient(90deg, rgba(41,121,187,1) 0%, rgba(39,85,162,1) 100%)
+
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 0
+        width: 100%
+        height: 100%
+        background-image: url(images/button-back.png)
+        background-repeat: no-repeat
+        background-position: right
+        background-size: contain
+
+.login
+
+    &__logo
+        margin-top: 15px
+        margin-bottom: 45px
+
+    &__main-title
+        margin-bottom: 40px
+
+.title-block
+    display: flex
+    justify-content: space-between
+
+    &__discription
+        margin-bottom: 35px
+        color: #9F9F9F
+        align-self: flex-end
+
+    @media screen and ( max-width: 1100px )
+        flex-flow: column
+
+        &__discription
+            width: 100%

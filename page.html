@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отборочный этап голосования - Чистый звук</title>
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body class="cabinet">
+
+    <a href="#" class="logout">
+        <span class="logout__text">Выйти</span>
+        <span class="logout-icon"></span>
+    </a>
+
+    <a href="javascript:void(0);" onclick="openSidebar()" class="sidebar-button open-sidebar _mobail">
+        <span class="sidebar-button__icon burger-icon"></span>
+    </a>
+
+    <div class="cabinet__sidebar sidebar" id="sidebar">
+
+        <div class="sidebar__wrapper">
+
+            <a href="javascript:void(0);" onclick="openSidebar()" class="sidebar-button close-sidebar _mobail">
+                <span class="sidebar-button__icon close-icon"></span>
+            </a>
+
+            <div class="sidebar__logo logo">
+                <img src="images/logo.svg" alt="Чистый звук" class="logo__image">
+            </div>
+
+            <nav class="sidebar__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item active"><a href="#" class="menu__link">опера</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">ХОРОВЫЕ ПРОИЗВЕДЕНИЯ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">ОРКЕСТРОВАЯ МУЗЫКА</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">КАМЕРНАЯ ВОКАЛЬНАЯ МУЗЫКА</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">КАМЕРНАЯ<br>ИНСТРУМЕНТАЛЬНАЯ МУЗЫКА, АНСАМБЛЬ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">КАМЕРНАЯ<br>ИНСТРУМЕНТАЛЬНАЯ МУЗЫКА, СОЛО</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">РЕСТАВРАЦИЯ АРХИВНЫХ АУДИОЗАПИСЕЙ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">СМЕШАННАЯ НОМИНАЦИ</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div class="cabinet__page">
+
+        <div class="main main_cabinet">
+
+            <div class="main__wrapper">
+                
+                <div class="title-block">
+
+                    <h1 class="main-title">Отборочный этап<br>голосования</h1>
+
+                    <div class="title-block__discription">* Можно выбрать не более 7 лучших релизов</div>
+                
+                </div>
+                
+                <table class="cabinet__table cabinet-table">
+    
+                    <thead>
+                        <tr>
+                            <th>Кoдовое<br>имя релиза</th>
+                            <th>Ссылка<br>для прослушивания</th>
+                            <th>Отметить<br>как лучший*</th>
+                            <th>Мой<br>комментарий</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td data-label="Название услуги">12-5</td>
+                            <td data-label="Ссылка для прослушивания">
+                                <div class="flex">
+                                    <a href="#">Скачать</a>
+                                    <span class="download-icon"></span>
+                                </div>
+                            </td>
+                            <td data-label="Отметить как лучший*">
+                                <form action="#">
+                                    <input id="best-mark-1" class="checkbox-custom" name="best-mark-1" type="checkbox" value="1">
+                                    <label for="best-mark-1" class="form-panel__label-check"></label>
+                                </form>
+                            </td>
+                            <td data-label="Мой комментарий">
+                                <form action="#">
+                                    <textarea name="comment-1" rows="1" class="cabinet-table__textarea" placeholder="Оставьте свой комментарий" onkeyup="resizeArea('comment_text', 45, 450);"></textarea>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Название услуги">Сладости и радости 2020</td>
+                            <td data-label="Ссылка для прослушивания">
+                                <div class="flex">
+                                    <a href="#">Скачать</a>
+                                    <span class="download-icon"></span>
+                                </div>
+                            </td>
+                            <td data-label="Отметить как лучший*">
+                                <form action="#">
+                                    <input id="best-mark-2" class="checkbox-custom" name="best-mark-1" type="checkbox" value="1" checked>
+                                    <label for="best-mark-2" class="form-panel__label-check"></label>
+                                </form>
+                            </td>
+                            <td data-label="Мой комментарий">
+                                <form action="#">
+                                    <textarea name="comment-2" rows="1" class="cabinet-table__textarea" placeholder="Оставьте свой комментарий" onkeyup="resizeArea('comment_text', 45, 450);"></textarea>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Название услуги">Неизвестные страницы русской музыки ХХ века</td>
+                            <td data-label="Ссылка для прослушивания">
+                                <div class="flex">
+                                    <a href="#">Скачать</a>
+                                    <span class="download-icon"></span>
+                                </div>
+                            </td>
+                            <td data-label="Отметить как лучший*">
+                                <form action="#">
+                                    <input id="best-mark-3" class="checkbox-custom" name="best-mark-3" type="checkbox" value="1" checked>
+                                    <label for="best-mark-3" class="form-panel__label-check"></label>
+                                </form>
+                            </td>
+                            <td data-label="Мой комментарий">
+                                <form action="#">
+                                    <textarea name="comment-3" rows="1" class="cabinet-table__textarea" placeholder="Оставьте свой комментарий" onkeyup="resizeArea('comment_text', 45, 450);">Потрясающая аудио запись уверен должен победить</textarea>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Название услуги">12-5</td>
+                            <td data-label="Ссылка для прослушивания">
+                                <div class="flex">
+                                    <a href="#">Скачать</a>
+                                    <span class="download-icon"></span>
+                                </div>
+                            </td>
+                            <td data-label="Отметить как лучший*">
+                                <form action="#">
+                                    <input id="best-mark-4" class="checkbox-custom" name="best-mark-4" type="checkbox" value="1">
+                                    <label for="best-mark-4" class="form-panel__label-check"></label>
+                                </form>
+                            </td>
+                            <td data-label="Мой комментарий">
+                                <form action="#">
+                                    <textarea name="comment-4" rows="1" class="cabinet-table__textarea" placeholder="Оставьте свой комментарий" onkeyup="resizeArea('comment_text', 45, 450);"></textarea>
+                                </form>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+    
+                </table>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="year-panel">
+        <div class="year-panel__text">20<br>21</div>
+    </div>
+
+    <div class="back back_cabinet"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
